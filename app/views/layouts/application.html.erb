@@ -10,12 +10,13 @@
   </head>
 
   <body>
+
     <%= render 'layouts/navbar'%>
 
-    <%= link_to "About", pages_about_path%>
-    <%= link_to "Contact", pages_contact_path%>
-
-    <%= yield %>
-    <p>Copyright Oshim chy </p>
+    <div class="container">
+      <%= yield %>
+      <%= render "layouts/footer"%>
+    </div>
+  
   </body>
 </html>
